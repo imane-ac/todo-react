@@ -14,7 +14,7 @@ class App extends React.Component{
                 prevState.todos.map(item=>{})
             }
         })*/
-        console.log("Changed", id)
+        console.log("Changed item", id)
     }
     render(){
         const toDoItems = this.state.todos.map(item => <TodoItem key={item.id} item={item} handleChange={this.handleChange}/>);
